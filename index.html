@@ -639,7 +639,8 @@
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<form>
+									<form id="contactForm" action="https://api.web3forms.com/submit" method="POST" >
+										<input type="hidden" name="access_key" value="1cd14423-0731-4561-ba9d-79c352485c54">
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
@@ -662,14 +663,14 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message" name="message"></textarea>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
+													<button type="submit" class="contact-btn" role="button">submit</button>
 												</div><!--/.single-single-contact-btn-->
 											</div><!--/.col-->
 										</div><!--/.row-->
@@ -701,7 +702,6 @@
 								</div><!--/.contact-adress-->
 								<div class="hm-foot-icon">
 									<ul>
-										
 										<li><a href="https://www.linkedin.com/in/subodh-bhujel/"><i class="fa fa-linkedin"></i></a></li><!--/li-->
 										
 										<li><a href="https://grabcad.com/subodh.babu.bhujel-1"><img src="assets/images/about/gc.png" alt="Grabcad Icon"></a></li><!--/li-->
@@ -716,6 +716,7 @@
 
 		</section><!--/.contact-->
 		<!--contact end -->
+
 
 		<!--footer-copyright start-->
 		<footer id="footer-copyright" class="footer-copyright">
@@ -772,6 +773,19 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+		
+		<script>
+			// Function to reset form fields
+			function resetForm() {
+				document.getElementById("contactForm").reset();
+			}
+		
+			// Call the resetForm function when the page loads
+			document.addEventListener('DOMContentLoaded', resetForm);
+
+		</script>
+		
+
         
     </body>
 	
