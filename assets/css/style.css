@@ -482,7 +482,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .main-timeline:before{
     content: "";
     width: 2px;
-    height: 84%;
+    height: 87%;
     background: #b2c1ce;
     position: absolute;
     top: 1.5%;
@@ -593,7 +593,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .isotope-overlay a {
     display: inline-block;
-    color: #760f0f;
+    color: #0f7643;
     font-size: 18px;
     text-align: center;
     font-weight: bold;
